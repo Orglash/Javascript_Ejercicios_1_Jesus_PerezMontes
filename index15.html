@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var number = prompt("Escribe un número: ");
+		var i;
+		document.write("Los divisores de "+parseInt(number)+" son: ")
+		for (i=2;i < number/2; i++) {
+			if (number % i == 0) {
+				document.write(i+", ");				
+			}
+		}
+	</script>
+</body>
+</html>

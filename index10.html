@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var sentence = prompt("Escribe una frase");
+		var limit = sentence.length;
+		var i;
+		for (i = 0; i < limit; i++) {
+			if (sentence.substr(i,1) == "a" || sentence.substr(i,1) == "e" || sentence.substr(i,1) == "i" || sentence.substr(i,1) == "o" || sentence.substr(i,1) == "u") {
+				document.write(sentence.substr(i,1));
+			}
+		}
+	</script>
+</body>
+</html>

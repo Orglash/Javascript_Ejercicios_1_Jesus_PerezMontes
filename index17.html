@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var number = prompt("Escribe un número");
+		var prime = true;
+		for (i=2; i < number / 2; i++) {
+			if (number % i === 0) {
+				prime = false;
+			}
+		}
+		if (prime) {
+			document.write("El número "+number+" es primo");
+		} else {
+			document.write("El número "+number+" no es primo");
+		}
+	</script>
+</body>
+</html>

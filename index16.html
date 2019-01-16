@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var number1 = prompt("Escribe un número");
+		var number2 = prompt("Escribe otro número");
+		var lesserNumber;
+		var i;
+		if (number1<number2) {
+			lesserNumber = number1;
+		} else {
+			lesserNumber = number2;
+		}
+		document.write("Los divisores comunes a "+number1+" y "+number2+" son: ");
+		for (i=1; i<(lesserNumber/2); i++) {
+			if (number1%i==0 && number2%i==0) {
+				document.write(i,", ");
+			}
+		}
+	</script>
+</body>
+</html>

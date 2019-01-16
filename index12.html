@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var sentence = prompt("Escribe una frase");
+		var limit = sentence.length;
+		var counterA = 0;
+		var counterE = 0;
+		var counterI = 0;
+		var counterO = 0;
+		var counterU = 0;
+		var i;
+		for (i = 0; i < limit; i++) {
+			if (sentence.substr(i,1) == "a") {
+				counterA++;
+			}
+			if (sentence.substr(i,1) == "e") {
+				counterE++;
+			}
+			if (sentence.substr(i,1) == "i") {
+				counterI++;
+			}
+			if (sentence.substr(i,1) == "o") {
+				counterO++;
+			}
+			if (sentence.substr(i,1) == "u") {
+				counterU++;
+			}
+		}
+		document.write("En la frase introducida, la letra 'a' aparece un total de "+parseInt(counterA)+" veces.<br>");		
+		document.write("En la frase introducida, la letra 'e' aparece un total de "+parseInt(counterE)+" veces.<br>");
+		document.write("En la frase introducida, la letra 'i' aparece un total de "+parseInt(counterI)+" veces.<br>");
+		document.write("En la frase introducida, la letra 'o' aparece un total de "+parseInt(counterO)+" veces.<br>");
+		document.write("En la frase introducida, la letra 'u' aparece un total de "+parseInt(counterU)+" veces.<br>");
+	</script>
+</body>
+</html>

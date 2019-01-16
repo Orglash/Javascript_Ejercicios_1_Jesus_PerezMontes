@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var number = prompt("Escribe un número:");
+		if ((parseInt(number)%2)==0){
+			document.write("El número "+parseInt(number)+" es divisible entre 2.");
+		} else{
+			if ((parseInt(number)%3)==0){
+				document.write("El número "+parseInt(number)+" es divisible entre 3.");
+			} else {
+				if ((parseInt(number)%5)==0){
+					document.write("El número "+parseInt(number)+" es divisible entre 5.");
+				} else {
+					if ((parseInt(number)%7)==0){
+						document.write("El número "+parseInt(number)+" es divisible entre 7.");
+					} else {
+						document.write("El número "+parseInt(number)+" no es divisible entre 2,3,5 o 7.");
+					}
+				}
+			}
+		}
+	</script>
+</body>
+</html>
